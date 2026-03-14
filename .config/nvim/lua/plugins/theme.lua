@@ -1,0 +1,1 @@
+/home/ngochandev/.config/omarchy/current/theme/neovim.lua
