@@ -13,3 +13,20 @@
 .config/BraveSoftware/Brave-Browser/Default/WebStorage/QuotaManager-journal
 .config/BraveSoftware/Brave-Browser/Local State
 .config/BraveSoftware/Brave-Browser/Default/Cookies
+# Ignore everything in Brave except the folder structure if you want
+brave/.config/BraveSoftware/Brave-Browser/Default/*
+
+# Keep these if you REALLY want to sync some settings (but risky)
+!brave/.config/BraveSoftware/Brave-Browser/Default/Preferences
+!brave/.config/BraveSoftware/Brave-Browser/Default/Bookmarks
+
+# BUT, absolutely ignore these (Sensitive/Binary)
+**/Cookies*
+**/History*
+**/Login Data*
+**/Network Persistent State
+**/WebStorage/
+**/IndexedDB/
+**/Local Extension Settings/
+**/Local State
+**/Cache/

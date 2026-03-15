@@ -4,3 +4,4 @@
 vim.opt.relativenumber = true
 vim.opt.spell = false
 vim.opt.spelllang = {}
+vim.opt.clipboard = "unnamedplus"

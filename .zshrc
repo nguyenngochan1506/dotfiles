@@ -114,7 +114,8 @@ yz() {
 # else
 #   export EDITOR='nvim'
 # fi
-
+export EDITOR='nvim'
+export VISUAL='nvim'
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -133,8 +134,6 @@ yz() {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(mise activate zsh)" # added by https://mise.run/zsh
-
-#Load function from Omarchy
-source ~/.local/share/omarchy/default/bash/functions
 bindkey '^H' backward-kill-word
+eval "$(mise activate zsh)"
+export PATH=$HOME/.local/bin:$PATH
