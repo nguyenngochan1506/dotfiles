@@ -91,7 +91,8 @@ alias lzg='lazygit'
 alias tm='tmux'
 alias ff='fastfetch'
 alias cl='clear'
-alias btdm='~/Work/projects/betodemy-app/'
+alias btdm='tmuxp load betodemy'
+alias py='python'
 
 # Cloudflare WARP Short Commands
 alias warp-on='sudo systemctl start warp-svc && warp-cli connect && echo "🚀 WARP is ON"'
@@ -137,3 +138,4 @@ export VISUAL='nvim'
 bindkey '^H' backward-kill-word
 eval "$(mise activate zsh)"
 export PATH=$HOME/.local/bin:$PATH
+export DISABLE_AUTO_TITLE='true'

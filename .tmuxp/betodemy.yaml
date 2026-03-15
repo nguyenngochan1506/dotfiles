@@ -1,0 +1,23 @@
+session_name: betodemy
+windows:
+  - focus: "true"
+    layout: 273a,315x67,0,0{196x67,0,0,0,118x67,197,0,5}
+    options:
+      automatic-rename: false
+    panes:
+      - zsh
+      - focus: "true"
+        shell_command: zsh
+    start_directory: /home/ngochandev/Work/projects/betodemy-app
+    window_name: code
+  - layout: 98b0,315x67,0,0[315x33,0,0{157x33,0,0,6,157x33,158,0,9},315x33,0,34{157x33,0,34,7,157x33,158,34,8}]
+    options:
+      automatic-rename: false
+    panes:
+      - focus: "true"
+        shell_command: zsh
+      - zsh
+      - zsh
+      - zsh
+    start_directory: /home/ngochandev/Work/projects/betodemy-app
+    window_name: log
