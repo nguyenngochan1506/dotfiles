@@ -135,7 +135,16 @@ export VISUAL='nvim'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-bindkey '^H' backward-kill-word
 eval "$(mise activate zsh)"
 export PATH=$HOME/.local/bin:$PATH
 export DISABLE_AUTO_TITLE='true'
+# 1. Bật Vi mode trước
+bindkey -v
+
+# 2. Load tính năng edit
+autoload -U edit-command-line
+zle -N edit-command-line
+
+# 3. Bind phím vào CẢ bảng Insert và bảng Normal của Vi
+bindkey -M viins '^e' edit-command-line
+bindkey -M vicmd '^e' edit-command-line
